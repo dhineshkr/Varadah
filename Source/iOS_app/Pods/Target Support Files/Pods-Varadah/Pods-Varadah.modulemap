@@ -1,0 +1,6 @@
+framework module Pods_Varadah {
+  umbrella header "Pods-Varadah-umbrella.h"
+
+  export *
+  module * { export * }
+}

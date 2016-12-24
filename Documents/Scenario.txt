@@ -1,0 +1,23 @@
+Scenario:
+ 
+After the Varadah cyclone, the city is facing issues with power, data and left over trees. We need to build an iOS app for an NGO initiative which will connect public with the NGO to help clear out the left over trees.
+ 
+I'll give you a limited set of mandatory requirements that the app should have, and leave the rest to your imagination and reasoning.
+ 
+Users should be able to register an account (FB signup is sufficient)
+Upon registration app to collect phone number and locality
+Users should be able to upload a "Clear This Tree" request
+Upload photo of the site
+Provide count of trees
+Estimate no of tata-aces required to remove
+Capture location
+Users can choose to fund the request themselves or request fund support
+If user is funding the request, Lynk will reach out to the user and provide trucks
+If user is requesting for a funding it will be flashed to other users, and once a sponsor is obtained, Lynk will coordinate the requestor and sponsor to provide the truck.
+So we will need to have a photo-feed section where funded and funding-required requests can be shown, and users can volunteer to fund the project.
+The app will show an estimated price based on the no of trucks required and the distance and time between the area and the destination dump site.
+We will have a home page for this app that will show stuff like total trees identified, removed in city, in your locality, etc. We could also show a leaderboard for funders, requestors, etc.
+
+
+1. Basic VIPER project creation with Activity addition
+2. 

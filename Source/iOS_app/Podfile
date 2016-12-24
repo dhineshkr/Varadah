@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'Varadah' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Varadah
+  pod 'AlamofireObjectMapper', '~> 3.0’
+  pod 'Kingfisher', '~> 2.4'
+
+  target 'VaradahTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'VaradahUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
