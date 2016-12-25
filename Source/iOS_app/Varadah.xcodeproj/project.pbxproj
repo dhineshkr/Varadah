@@ -9,8 +9,16 @@
 /* Begin PBXBuildFile section */
 		4708CA509B369677CA76EB79 /* Pods_VaradahUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230E10213AB5A6E83643108A /* Pods_VaradahUITests.framework */; };
 		7D1DA267BEA69EF801C8C421 /* Pods_VaradahTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F8AEB036409DAA1595F7DB /* Pods_VaradahTests.framework */; };
+		7E092FB61E0E9572002E9F18 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FB41E0E9572002E9F18 /* HomeInteractor.swift */; };
+		7E092FB71E0E9572002E9F18 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FB51E0E9572002E9F18 /* HomePresenter.swift */; };
+		7E092FB91E0E9599002E9F18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FB81E0E9599002E9F18 /* HomeViewController.swift */; };
+		7E092FBC1E0F9A41002E9F18 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FBB1E0F9A41002E9F18 /* CircleProgressView.swift */; };
+		7E092FC31E0FA951002E9F18 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FBE1E0FA951002E9F18 /* BaseViewController.swift */; };
+		7E092FC41E0FA951002E9F18 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FBF1E0FA951002E9F18 /* Presenter.swift */; };
+		7E092FC51E0FA951002E9F18 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FC01E0FA951002E9F18 /* Interactor.swift */; };
+		7E092FC61E0FA951002E9F18 /* Utill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FC11E0FA951002E9F18 /* Utill.swift */; };
+		7E092FC71E0FA951002E9F18 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FC21E0FA951002E9F18 /* ViewControllerConstants.swift */; };
 		7E5B35C21E0E7DB700829168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B35C11E0E7DB700829168 /* AppDelegate.swift */; };
-		7E5B35C41E0E7DB700829168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B35C31E0E7DB700829168 /* ViewController.swift */; };
 		7E5B35C71E0E7DB700829168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B35C51E0E7DB700829168 /* Main.storyboard */; };
 		7E5B35C91E0E7DB700829168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B35C81E0E7DB700829168 /* Assets.xcassets */; };
 		7E5B35CC1E0E7DB700829168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B35CA1E0E7DB700829168 /* LaunchScreen.storyboard */; };
@@ -42,9 +50,17 @@
 		4F3CD0B9DF877011D8495ED8 /* Pods-VaradahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaradahTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VaradahTests/Pods-VaradahTests.debug.xcconfig"; sourceTree = "<group>"; };
 		66F8AEB036409DAA1595F7DB /* Pods_VaradahTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaradahTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B58B5041571D07A42B92FD /* Pods-Varadah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Varadah.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Varadah/Pods-Varadah.debug.xcconfig"; sourceTree = "<group>"; };
+		7E092FB41E0E9572002E9F18 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeInteractor.swift; path = Home/HomeInteractor.swift; sourceTree = "<group>"; };
+		7E092FB51E0E9572002E9F18 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = Home/HomePresenter.swift; sourceTree = "<group>"; };
+		7E092FB81E0E9599002E9F18 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
+		7E092FBB1E0F9A41002E9F18 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleProgressView.swift; path = Common/UI/CircleProgressView.swift; sourceTree = "<group>"; };
+		7E092FBE1E0FA951002E9F18 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Common/Base/BaseViewController.swift; sourceTree = "<group>"; };
+		7E092FBF1E0FA951002E9F18 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = Common/Base/Presenter.swift; sourceTree = "<group>"; };
+		7E092FC01E0FA951002E9F18 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = Common/Base/Interactor.swift; sourceTree = "<group>"; };
+		7E092FC11E0FA951002E9F18 /* Utill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utill.swift; path = Common/Base/Utill.swift; sourceTree = "<group>"; };
+		7E092FC21E0FA951002E9F18 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerConstants.swift; path = Common/Base/ViewControllerConstants.swift; sourceTree = "<group>"; };
 		7E5B35BE1E0E7DB700829168 /* Varadah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Varadah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5B35C11E0E7DB700829168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E5B35C31E0E7DB700829168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E5B35C61E0E7DB700829168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E5B35C81E0E7DB700829168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5B35CB1E0E7DB700829168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +118,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7E092FAA1E0E92B2002E9F18 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7E092FBD1E0FA91D002E9F18 /* Base */,
+				7E092FBA1E0F9A35002E9F18 /* UI */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7E092FAB1E0E92EC002E9F18 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7E092FB81E0E9599002E9F18 /* HomeViewController.swift */,
+				7E092FB41E0E9572002E9F18 /* HomeInteractor.swift */,
+				7E092FB51E0E9572002E9F18 /* HomePresenter.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7E092FBA1E0F9A35002E9F18 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7E092FBB1E0F9A41002E9F18 /* CircleProgressView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		7E092FBD1E0FA91D002E9F18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7E092FBE1E0FA951002E9F18 /* BaseViewController.swift */,
+				7E092FBF1E0FA951002E9F18 /* Presenter.swift */,
+				7E092FC01E0FA951002E9F18 /* Interactor.swift */,
+				7E092FC11E0FA951002E9F18 /* Utill.swift */,
+				7E092FC21E0FA951002E9F18 /* ViewControllerConstants.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		7E5B35B51E0E7DB700829168 = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +182,9 @@
 		7E5B35C01E0E7DB700829168 /* Varadah */ = {
 			isa = PBXGroup;
 			children = (
+				7E092FAB1E0E92EC002E9F18 /* Home */,
+				7E092FAA1E0E92B2002E9F18 /* Common */,
 				7E5B35C11E0E7DB700829168 /* AppDelegate.swift */,
-				7E5B35C31E0E7DB700829168 /* ViewController.swift */,
 				7E5B35C51E0E7DB700829168 /* Main.storyboard */,
 				7E5B35C81E0E7DB700829168 /* Assets.xcassets */,
 				7E5B35CA1E0E7DB700829168 /* LaunchScreen.storyboard */,
@@ -427,8 +483,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5B35C41E0E7DB700829168 /* ViewController.swift in Sources */,
+				7E092FBC1E0F9A41002E9F18 /* CircleProgressView.swift in Sources */,
+				7E092FC41E0FA951002E9F18 /* Presenter.swift in Sources */,
+				7E092FC71E0FA951002E9F18 /* ViewControllerConstants.swift in Sources */,
 				7E5B35C21E0E7DB700829168 /* AppDelegate.swift in Sources */,
+				7E092FC61E0FA951002E9F18 /* Utill.swift in Sources */,
+				7E092FB61E0E9572002E9F18 /* HomeInteractor.swift in Sources */,
+				7E092FB91E0E9599002E9F18 /* HomeViewController.swift in Sources */,
+				7E092FB71E0E9572002E9F18 /* HomePresenter.swift in Sources */,
+				7E092FC51E0FA951002E9F18 /* Interactor.swift in Sources */,
+				7E092FC31E0FA951002E9F18 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
