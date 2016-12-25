@@ -44,4 +44,37 @@ class BaseViewController: UIViewController {
         activityIndicator.stopAnimating()
     }
     
+    //MARK: AlertController
+    func showAlert(title: String = ViewControllerConstants.kAppTitle, message: String,
+                    okButtonTitle: String = ViewControllerConstants.kAppOkButton,
+                    cancelButtonTitle: String? = nil, tag: Int = 0) {
+        dispatch_async(dispatch_get_main_queue(),{
+            let alertMessage = UIAlertController(title: title, message: message,
+                preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: okButtonTitle,
+                style: UIAlertActionStyle.Default) { UIAlertAction in
+                self.processAlertActionForOK(tag)
+            }
+            alertMessage.addAction(okAction)
+            if cancelButtonTitle != nil {
+                let cancelAction = UIAlertAction(title: cancelButtonTitle,
+                    style: UIAlertActionStyle.Default) { UIAlertAction in
+                    self.processAlertActionForCancel()
+                }
+                alertMessage.addAction(cancelAction)
+            }
+            self.presentViewController(alertMessage, animated: true, completion: nil)
+        })
+    }
+    
+    //MARK: AlertView Custom Delegate Mehtod
+    func processAlertActionForOK(tag: Int, details: AnyObject? = nil) {
+        //Override if AlertViewController to be handled.
+    }
+    
+    func processAlertActionForCancel() {
+        //Override if AlertViewController to be handled.
+    }
+    
+    
 }

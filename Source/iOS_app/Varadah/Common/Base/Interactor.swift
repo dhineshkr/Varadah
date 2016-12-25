@@ -14,3 +14,10 @@ protocol InteractorDelegate : class {
     func responseOnFailure(error: ErrorType?)
 }
 
+public struct Interactor {
+    let defaultHeaders: [String:String] = [
+        "X-Kinvey-API-Version": "3",
+        "Authorization": "Basic a2lkX1NKckRMSFRWZTpjZDhmNGY3NGQ4MTg0OGE1OGFlNjkyMjQ2YmUxYmI4NQ==",
+        "Content-Type": "application/json"
+    ]
+}

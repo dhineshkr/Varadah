@@ -6,8 +6,9 @@ import UIKit
 
 public struct ViewControllerConstants {
 
-//    static let kNSURLErrorCancelled = 0
-
+    static let kAppTitle = "Varadah Cyclone Help"
+    static let kAppOkButton = "OK"
+    
     struct CircleProgressView {
         static let kRadiusDenominator = CGFloat(4.30)
         static let kMinimumDrawableProgress = 0.04
