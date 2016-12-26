@@ -18,6 +18,7 @@ class RequestModel : Mappable {
     var sponsorCell:String = ""
     var treesCount:String = ""
     var trucksRequired:String = ""
+    var photoPath:String = ""
     
     func mapping(map: Map) {
         _id <- map["_id"]
@@ -26,6 +27,7 @@ class RequestModel : Mappable {
         sponsorCell <- map["sponsorCell"]
         treesCount <- map["treesCount"]
         trucksRequired <- map["trucksRequired"]
+        photoPath <- map["photoPath"]
     }
     
     required init?(_ map: Map) {
@@ -46,7 +48,8 @@ class NewRequestInteractor {
         var parameters: [String: AnyObject] = [
             "treesCount": vm.treesCount,
             "trucksRequired": vm.trucksRequired,
-            "location": vm.location]
+            "location": vm.location,
+            "photoPath": ""]
         if vm.sponsorName.characters.count > 0 && vm.sponsorCell.characters.count > 0 {
             parameters["sponsorName"] = vm.sponsorName
             parameters["sponsorCell"] = vm.sponsorCell

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController, PresenterDelegate {
+class HomeViewController: BaseViewController, PresenterDelegate, UIGestureRecognizerDelegate {
 
     private var presenter: HomePresenter!
 
@@ -18,6 +18,7 @@ class HomeViewController: BaseViewController, PresenterDelegate {
     @IBOutlet weak var progressView: CircleProgressView!
     @IBOutlet weak var fundedRequestPercent: UILabel!
     @IBOutlet weak var rightview: UIView!
+    @IBOutlet weak var leftview: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,9 @@ class HomeViewController: BaseViewController, PresenterDelegate {
     
     func initiViews() {
         self.rightview.hidden = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.presentFundedRequest(_:)))
+        tap.delegate = self
+        leftview.addGestureRecognizer(tap)
         self.showSpinner()
     }
     
@@ -62,6 +66,17 @@ class HomeViewController: BaseViewController, PresenterDelegate {
     func updateError(error: ErrorType?) {
         self.refreshViews()
         print(error)
+    }
+    
+    func presentFundedRequest(gesture: UITapGestureRecognizer) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyboard
+            .instantiateViewControllerWithIdentifier("RequestListViewControllerID")
+            as? RequestListViewController {
+            viewController.listFunded = true
+            self.presentViewController(viewController,
+                                    animated: true, completion: nil)
+        }
     }
 
 }

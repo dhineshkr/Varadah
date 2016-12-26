@@ -22,6 +22,7 @@
 		7E092FCD1E1032F6002E9F18 /* NewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FCA1E1032F6002E9F18 /* NewRequestViewController.swift */; };
 		7E092FCE1E1032F6002E9F18 /* NewRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FCB1E1032F6002E9F18 /* NewRequestInteractor.swift */; };
 		7E092FD01E111A4D002E9F18 /* RequestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FCF1E111A4D002E9F18 /* RequestListViewController.swift */; };
+		7E092FD21E1123E0002E9F18 /* RequestCellLeftAllign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E092FD11E1123E0002E9F18 /* RequestCellLeftAllign.swift */; };
 		7E5B35C21E0E7DB700829168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B35C11E0E7DB700829168 /* AppDelegate.swift */; };
 		7E5B35C71E0E7DB700829168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B35C51E0E7DB700829168 /* Main.storyboard */; };
 		7E5B35C91E0E7DB700829168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B35C81E0E7DB700829168 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		7E092FCA1E1032F6002E9F18 /* NewRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewRequestViewController.swift; path = Request/NewRequestViewController.swift; sourceTree = "<group>"; };
 		7E092FCB1E1032F6002E9F18 /* NewRequestInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewRequestInteractor.swift; path = Request/NewRequestInteractor.swift; sourceTree = "<group>"; };
 		7E092FCF1E111A4D002E9F18 /* RequestListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestListViewController.swift; path = Request/RequestListViewController.swift; sourceTree = "<group>"; };
+		7E092FD11E1123E0002E9F18 /* RequestCellLeftAllign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestCellLeftAllign.swift; path = Request/RequestCellLeftAllign.swift; sourceTree = "<group>"; };
 		7E5B35BE1E0E7DB700829168 /* Varadah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Varadah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5B35C11E0E7DB700829168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5B35C61E0E7DB700829168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		7E092FC81E102C88002E9F18 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				7E092FD11E1123E0002E9F18 /* RequestCellLeftAllign.swift */,
 				7E092FC91E1032F6002E9F18 /* NewRequestPresenter.swift */,
 				7E092FCA1E1032F6002E9F18 /* NewRequestViewController.swift */,
 				7E092FCB1E1032F6002E9F18 /* NewRequestInteractor.swift */,
@@ -514,6 +517,7 @@
 				7E092FCC1E1032F6002E9F18 /* NewRequestPresenter.swift in Sources */,
 				7E092FB91E0E9599002E9F18 /* HomeViewController.swift in Sources */,
 				7E092FB71E0E9572002E9F18 /* HomePresenter.swift in Sources */,
+				7E092FD21E1123E0002E9F18 /* RequestCellLeftAllign.swift in Sources */,
 				7E092FC51E0FA951002E9F18 /* Interactor.swift in Sources */,
 				7E092FC31E0FA951002E9F18 /* BaseViewController.swift in Sources */,
 				7E092FCD1E1032F6002E9F18 /* NewRequestViewController.swift in Sources */,
