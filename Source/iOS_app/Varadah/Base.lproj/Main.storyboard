@@ -26,7 +26,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIK-3a-cVa">
                                         <rect key="frame" x="15" y="15" width="270" height="210"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Cleaned" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39b-A7-WDg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funded Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39b-A7-WDg">
                                                 <rect key="frame" x="0.0" y="14" width="270" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,9 +42,21 @@
                                                             <constraint firstAttribute="width" secondItem="9Wk-Tv-Tow" secondAttribute="height" multiplier="1:1" id="UTV-Iy-Z2U"/>
                                                         </constraints>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-jm-AxJ">
+                                                        <rect key="frame" x="100" y="48" width="70" height="70"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="LCi-n4-4xK"/>
+                                                            <constraint firstAttribute="width" constant="70" id="c9K-0Y-FlN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="Pgn-jm-AxJ" firstAttribute="centerY" secondItem="msE-Jf-rC2" secondAttribute="centerY" id="AbQ-Nq-DE2"/>
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="height" secondItem="msE-Jf-rC2" secondAttribute="height" id="BHM-ij-t1D"/>
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="top" secondItem="msE-Jf-rC2" secondAttribute="top" constant="3" id="D5n-tL-LJf"/>
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="centerX" secondItem="msE-Jf-rC2" secondAttribute="centerX" id="F8S-PF-Cop"/>
@@ -52,6 +64,7 @@
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="top" secondItem="msE-Jf-rC2" secondAttribute="top" constant="-22" id="bTZ-Km-IT0"/>
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="centerY" secondItem="msE-Jf-rC2" secondAttribute="centerY" id="hiW-2Y-Yka"/>
                                                     <constraint firstItem="9Wk-Tv-Tow" firstAttribute="width" secondItem="msE-Jf-rC2" secondAttribute="width" id="mCy-9u-rSY"/>
+                                                    <constraint firstItem="Pgn-jm-AxJ" firstAttribute="centerX" secondItem="msE-Jf-rC2" secondAttribute="centerX" id="wkg-6K-j8h"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -174,8 +187,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="processedRequestLabel" destination="PSI-bw-qq7" id="BZx-f1-JOn"/>
+                        <outlet property="fundedRequestLabel" destination="PSI-bw-qq7" id="hDZ-gg-Zz0"/>
+                        <outlet property="fundedRequestPercent" destination="Pgn-jm-AxJ" id="ahj-7P-0ei"/>
                         <outlet property="progressView" destination="9Wk-Tv-Tow" id="bF9-ry-Tzr"/>
+                        <outlet property="rightview" destination="3LO-E6-NQl" id="sK7-RF-Oqz"/>
                         <outlet property="topAreasLabel" destination="hAJ-jK-c8Z" id="UIG-KK-YbR"/>
                         <outlet property="totalRequestLabel" destination="f1x-10-wdu" id="elw-zh-lPL"/>
                     </connections>

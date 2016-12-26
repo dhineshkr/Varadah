@@ -13,9 +13,11 @@ class HomeViewController: BaseViewController, PresenterDelegate {
     private var presenter: HomePresenter!
 
     @IBOutlet weak var totalRequestLabel: UILabel!
-    @IBOutlet weak var processedRequestLabel: UILabel!
+    @IBOutlet weak var fundedRequestLabel: UILabel!
     @IBOutlet weak var topAreasLabel: UILabel!
     @IBOutlet weak var progressView: CircleProgressView!
+    @IBOutlet weak var fundedRequestPercent: UILabel!
+    @IBOutlet weak var rightview: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +33,13 @@ class HomeViewController: BaseViewController, PresenterDelegate {
     }
     
     func initiViews() {
-//        self.view.hidden = true
+        self.rightview.hidden = true
         self.showSpinner()
     }
     
     func refreshViews() {
-        if self.view.hidden {
-            self.view.hidden = false
+        if self.rightview.hidden {
+            self.rightview.hidden = false
         }
         self.hideSpinner()
     }
@@ -48,9 +50,9 @@ class HomeViewController: BaseViewController, PresenterDelegate {
         if let hvm = response as? HomeViewModel {
             self.topAreasLabel.text = hvm.topAreasText
             self.totalRequestLabel.text = hvm.totalRequestText
-            self.processedRequestLabel.text = hvm.requestProcessedText
+            self.fundedRequestLabel.text = hvm.requestProcessedText
+            self.fundedRequestPercent.text = String(format:"%.0f%%", hvm.progress)
             self.progressView.progress = hvm.progress
-//            self.progressView.progress = Double(40)
             self.progressView.trackFillColor = hvm.progressColor
             self.progressView.updateUI()
         }

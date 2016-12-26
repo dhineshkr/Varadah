@@ -13,9 +13,19 @@ import AlamofireObjectMapper
 
 class RequestModel : Mappable {
     var _id:String = ""
+    var location:String = ""
+    var sponsorName:String = ""
+    var sponsorCell:String = ""
+    var treesCount:String = ""
+    var trucksRequired:String = ""
     
     func mapping(map: Map) {
         _id <- map["_id"]
+        location <- map["location"]
+        sponsorName <- map["sponsorName"]
+        sponsorCell <- map["sponsorCell"]
+        treesCount <- map["treesCount"]
+        trucksRequired <- map["trucksRequired"]
     }
     
     required init?(_ map: Map) {
