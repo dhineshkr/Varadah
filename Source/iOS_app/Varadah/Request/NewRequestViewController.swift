@@ -60,6 +60,8 @@ class NewRequestViewController: BaseViewController, PresenterDelegate,
         //refresh the whole view
         if let addedModel = response as? RequestModel {
             self.showAlert(message: "New Request Added Succesfully!!!")
+            NSNotificationCenter.defaultCenter().postNotificationName(
+                "requestUpdated", object: nil)
         }
     }
     

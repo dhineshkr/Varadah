@@ -38,6 +38,11 @@ class HomeViewController: BaseViewController, PresenterDelegate, UIGestureRecogn
         let tap = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.presentFundedRequest(_:)))
         tap.delegate = self
         leftview.addGestureRecognizer(tap)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                        selector: #selector(HomeViewController.requestUpdated(_:)),
+                        name:"requestUpdated", object: nil)
+        
         self.showSpinner()
     }
     
@@ -46,6 +51,11 @@ class HomeViewController: BaseViewController, PresenterDelegate, UIGestureRecogn
             self.rightview.hidden = false
         }
         self.hideSpinner()
+    }
+    
+    func requestUpdated(sender: AnyObject) {
+        self.showSpinner()
+        self.presenter.initModels()
     }
 
     //PresenterDelegate Implementation
@@ -74,6 +84,7 @@ class HomeViewController: BaseViewController, PresenterDelegate, UIGestureRecogn
             .instantiateViewControllerWithIdentifier("RequestListViewControllerID")
             as? RequestListViewController {
             viewController.listFunded = true
+//            self.navigationController?.pushViewController(HomeViewController, animated: true)
             self.presentViewController(viewController,
                                     animated: true, completion: nil)
         }
